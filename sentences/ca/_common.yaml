@@ -10,23 +10,23 @@ responses:
 lists:
   color:
     values:
-      - in: blanc
+      - in: (blanc | blanca | blancs | blanques)
         out: white
-      - in: negre
+      - in: (negre | negra | negres)
         out: black
-      - in: vermell
+      - in: (vermell | vermella | roig | roja | vermells | roigs | rojos | roges)
         out: red
-      - in: taronja
+      - in: (taronja | carabassa | carbassa | taronges | carabasses | carbasses)
         out: orange
-      - in: groc
+      - in: (groc | groga | grocs | grogues)
         out: yellow
-      - in: verd
+      - in: (verd | verda | verds | verdes)
         out: green
-      - in: blau
+      - in: (blau | blava | blaus | blaves)
         out: blue
-      - in: "(lila|morat|porpre)"
+      - in: "(lila | morat| morada | porpra | púrpura | liles | morats | morades | porpres | púrpures)"
         out: purple
-      - in: marró
+      - in: (marró | marrons)
         out: brown
   brightness:
     range:
@@ -47,20 +47,23 @@ lists:
       - in: "f"
         out: "fahrenheit"
 expansion_rules:
-  name: "[el | la | l'] {name}"
-  area: "[en el | en la | en | del | de la | al | a la | a] {area}"
-  quin_es: "(quin és | quina és | que es)"
+  name: "[el | la | l' | es | s' | sa | els | les | ses] {name}"
+  area: "[en el | en la | en es | en sa | en | del | de la | des | al | a la | a sa | a] {area}"
+  quin_es: "(quin és | quina és | què es)"
   lluentor: "{brightness:brightness_pct} [per cent]"
-  engega: "(encén | engega | posa | activa)"
-  apaga: "(apaga | atura | desconnecta | para)"
-  tanca: "(tanca)"
-  obre: "(obre)"
-  llums: "(la llum | les llums)"
+  engega: "(encén | engega | posa | activa | pose | active)"
+  apaga: "(apaga | atura | desconnecta | para | apague | ature | desconnecte | pare)"
+  tanca: "(tanca | tanque)"
+  obre: "(obre | obri)"
+  llums: "(el llum | la llum | els llums | les llums)"
   temp: "(temperatura)"
   graus: "{temperature} [graus] [{temperature_unit}]"
-  configura: "(posa | configura)"
+  configura: "(posa | configura | defineix | estableix | pose | configure | definix | establix)"
 skip_words:
   - si us plau
   - vinga
-  - Sisplau
-  - Per favor
+  - sisplau
+  - per favor
+  - sispli
+  - gràcies
+  - moltes gràcies
