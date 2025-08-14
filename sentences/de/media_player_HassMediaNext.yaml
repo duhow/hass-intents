@@ -8,11 +8,11 @@ intents:
           - "[(spring[e]|spul[e]) ]ein[en] <song> (vor[wärts]|weiter) [am|(an|auf) [dem]] {name}"
           - "ein[en] <song> (vor[wärts]|weiter)[ ](springen|spulen) [am|(an|auf) [dem]] {name}"
           - "[(spring[e]|spul[e]) ]<zu_dem> <naechster> <song>[ (vor[wärts]|weiter)] [am|(an|auf) [dem]] {name}"
-          - "[(spring[e]|spul[e]) ][((an|auf)[ dem]|am) ]<name> <zu_dem> <naechster> <song>[ (vor[wärts]|weiter)]"
+          - "[(spring[e]|spul[e]) ][((an|auf)[ dem]|am) ] {name} <zu_dem> <naechster> <song>[ (vor[wärts]|weiter)]"
           - "<zu_dem> <naechster> <song>[ (vor[wärts]|weiter)] (springen|spulen) [am|(an|auf) [dem]] {name}"
-          - "[((an|auf)[ dem]|am) ]<name> <zu_dem> <naechster> <song>[ (vor[wärts]|weiter)][ ](springen|spulen)"
-          - "überspring[e] ((das|dieses)[ eine]|ein) <song> [((an|auf)[ dem]|am) ]<name>"
-          - "[((an|auf)[ dem]|am) ]<name> ((das|dieses)[ eine]|ein) <song> überspringen"
+          - "[((an|auf)[ dem]|am) ] {name} <zu_dem> <naechster> <song>[ (vor[wärts]|weiter)][ ](springen|spulen)"
+          - "überspring[e] ((das|dieses)[ eine]|ein) <song> [((an|auf)[ dem]|am) ] {name}"
+          - "[((an|auf)[ dem]|am) ] {name} ((das|dieses)[ eine]|ein) <song> überspringen"
         requires_context:
           domain: media_player
       - sentences:

@@ -12,9 +12,9 @@ intents:
           - "[<artikel_bestimmt> ]<song> [am|(an|auf) [dem]] {name} (nochmal <starten_end_of_sentence>|[nochmal ]wiederholen)"
           - "[(spring[e]|spul[e]) ]ein[en] <song> (zurück|rückwärts) [am|(an|auf) [dem]] {name}"
           - "[(spring[e]|spul[e]) ]<zu_dem> <vorheriger_letzter> <song>[ (zurück|rückwärts)] [am|(an|auf) [dem]] {name}"
-          - "[(spring[e]|spul[e]) ][((an|auf)[ dem]|am) ]<name> <zu_dem> <vorheriger_letzter> <song>[ (zurück|rückwärts)]"
+          - "[(spring[e]|spul[e]) ][((an|auf)[ dem]|am) ] {name} <zu_dem> <vorheriger_letzter> <song>[ (zurück|rückwärts)]"
           - "<zu_dem> <vorheriger_letzter> <song>[ (zurück|rückwärts)] (springen|spulen) [am|(an|auf) [dem]] {name}"
-          - "[((an|auf)[ dem]|am) ]<name> <zu_dem> <vorheriger_letzter> <song>[ (zurück|rückwärts)][ ](springen|spulen)"
+          - "[((an|auf)[ dem]|am) ] {name} <zu_dem> <vorheriger_letzter> <song>[ (zurück|rückwärts)][ ](springen|spulen)"
         requires_context:
           domain: media_player
       - sentences:
