@@ -437,11 +437,11 @@ expansion_rules:
 
   # Altro
   name: "[<the>]{name}"
-  brightness: "{brightness}[[ ]<percent>]"
-  temperature: "{temperature}[([ ]°)|( grado|gradi)]"
+  brightness: "{brightness}[ <percent>]"
+  temperature: "{temperature}[( °| grado|gradi)]"
   temp: "(temp|temperatura)"
-  position: "{position}[[ ]<percent>]"
-  volume: "{volume:volume_level}[[ ]<percent>]"
+  position: "{position}[ <percent>]"
+  volume: "{volume:volume_level}[ <percent>]"
   percent: "(%|percento|per cento|su cento)"
   made: "(fatto|costruito|prodotto|generato)"
   created: "creato"
