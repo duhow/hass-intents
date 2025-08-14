@@ -413,20 +413,21 @@ expansion_rules:
   light: "( [punt(o|i)] luce | luci | lampad[in](a|e) | lampadari[o])"
 
   # Verbi
-  turn_on: "[fa('|i|re)](accend(i|ere) | attiv(a|are) | esegu(i|ire) | avvi(a|are))"
+  to_do: "fa('|i|r|re)"
+  turn_on: "[<to_do>](accend(i|ere) | attiv(a|are) | esegu(i|ire) | avvi(a|are))"
   turn_off: "((spegn|speng)(i|ere) | disattiv(a|are))"
   open: "(apr(i|ire) | alz(a|are))"
   close: "(chiud(i|ere) | abbass(a|are))"
   set: "( (impost|modific|cambi|sett)(a|are) | (mett|rend)(i|ere) )"
-  numeric_value_set: "(<set> | [fa('|i|re) ]((alz|aument|increment|abbass)(a|are) | ridu(ci|rre)) | fa('|i|re) (salire|scendere))"
+  numeric_value_set: "(<set> | [<to_do>] ((alz|aument|increment|abbass)(a|are) | ridu(ci|rre)) | <to_do> (salire|scendere))"
   to_lock: "(chiud(i|ere)|blocca[re])"
   unlock: "(apri[re]|sblocca[re]|schiud(i|ere))"
   add: "(aggiung(i|ere)|inseri(sci|re))"
   put: "(mett(i|ere))"
   ask: "(chieder(e|ti)|domandar(e|ti))"
   clean: "(puli(re|sci) | aspir(a|are) | spazz(a|are) | lav(a|are))"
-  start: "(<turn_on> | [fa('|i|re)] (partire))"
-  announce: "(annunci(a|are) | comunic(a|are) | trasmett(i|ere))| fa('|i|r|re) sapere | inform(a|are)"
+  start: "(<turn_on> | [<to_do>] (partire))"
+  announce: "(annunci(a|are) | comunic(a|are) | trasmett(i|ere))| <to_do> sapere | inform(a|are)"
 
   # Posti, aree e luoghi
   in_here: "(qu(a|i)|in questa (stanza|camera))"
