@@ -3,13 +3,13 @@ intents:
   HassMediaNext:
     data:
       - sentences:
-          - "[<starte> ][<artikel_bestimmt> ]<naechster>[ <song>][ ((an|auf)[ dem]|am)] <name>"
-          - "[<artikel_bestimmt> ]<naechster>[ <song>][ ((an|auf)[ dem]|am)] <name> <starten_end_of_sentence>"
-          - "[(spring[e]|spul[e]) ]ein[en] <song> (vor[wärts]|weiter)[ ((an|auf)[ dem]|am)] <name>"
-          - "ein[en] <song> (vor[wärts]|weiter)[ ](springen|spulen)[ ((an|auf)[ dem]|am)] <name>"
-          - "[(spring[e]|spul[e]) ]<zu_dem> <naechster> <song>[ (vor[wärts]|weiter)][ ((an|auf)[ dem]|am)] <name>"
+          - "[<starte> ][<artikel_bestimmt> ]<naechster>[ <song>] [am|(an|auf) [dem]] {name}"
+          - "[<artikel_bestimmt> ]<naechster>[ <song>] [am|(an|auf) [dem]] {name} <starten_end_of_sentence>"
+          - "[(spring[e]|spul[e]) ]ein[en] <song> (vor[wärts]|weiter) [am|(an|auf) [dem]] {name}"
+          - "ein[en] <song> (vor[wärts]|weiter)[ ](springen|spulen) [am|(an|auf) [dem]] {name}"
+          - "[(spring[e]|spul[e]) ]<zu_dem> <naechster> <song>[ (vor[wärts]|weiter)] [am|(an|auf) [dem]] {name}"
           - "[(spring[e]|spul[e]) ][((an|auf)[ dem]|am) ]<name> <zu_dem> <naechster> <song>[ (vor[wärts]|weiter)]"
-          - "<zu_dem> <naechster> <song>[ (vor[wärts]|weiter)] (springen|spulen)[ ((an|auf)[ dem]|am)] <name>"
+          - "<zu_dem> <naechster> <song>[ (vor[wärts]|weiter)] (springen|spulen) [am|(an|auf) [dem]] {name}"
           - "[((an|auf)[ dem]|am) ]<name> <zu_dem> <naechster> <song>[ (vor[wärts]|weiter)][ ](springen|spulen)"
           - "überspring[e] ((das|dieses)[ eine]|ein) <song> [((an|auf)[ dem]|am) ]<name>"
           - "[((an|auf)[ dem]|am) ]<name> ((das|dieses)[ eine]|ein) <song> überspringen"
