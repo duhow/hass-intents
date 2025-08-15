@@ -212,7 +212,7 @@ expansion_rules:
   llums_typo: "[[d]el[s]|la|les] (juny|junta|junts)"
   temp: "(temperatura)"
   graus: "{temperature} [graus]"
-  pujar: "([a]puja|aixeca)[r|t|-li]"
+  pujar: "([a]puja|aixeca|posa)[r|t|-li]"
   baixar: "[a]baixa[r|t|-li]"
   configura: "(posa[r]|puja[r]|configura[r]|ajusta[r]|canvia[r]|establ(ir|eix|ix))"
   posició: "{position}[<percent>]"
