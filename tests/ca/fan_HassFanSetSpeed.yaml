@@ -1,0 +1,54 @@
+---
+language: ca
+tests:
+  # Current area
+  - sentences:
+      - "canvia la velocitat del ventilador al 50%"
+      - "posa la velocitat dels ventiladors d'aquí al 50%"
+    intent:
+      name: HassFanSetSpeed
+      context:
+        area: Menjador
+      slots:
+        area: Menjador
+        percentage: 50
+    response: "Canvio la velocitat"
+
+  # Fan by name
+  - sentences:
+      - posa la velocitat del ventilador del sostre al 50%
+      - canvia la velocitat del ventilador del sostre al 50%
+      - velocitat del ventilador del sostre al 50%
+      - ventilador del sostre al 50%
+    intent:
+      name: HassFanSetSpeed
+      slots:
+        name: Ventilador del sostre
+        percentage: 50
+    response: "Canvio la velocitat"
+
+  # Area by name
+  - sentences:
+      - "set Cuina fan speed to 50%"
+      - "set the speed of the Cuina fans to 50%"
+      - "make Cuina fans 50%"
+      - "Cuina fans 50%"
+    intent:
+      name: HassFanSetSpeed
+      slots:
+        area: Cuina
+        percentage: 50
+    response: "Canvio la velocitat"
+
+  # Floor by name
+  - sentences:
+      - "set Terrat fan speed to 50%"
+      - "set the speed of the Terrat fans to 50%"
+      - "make Terrat fans 50%"
+      - "Terrat fans 50%"
+    intent:
+      name: HassFanSetSpeed
+      slots:
+        floor: Terrat
+        percentage: 50
+    response: "Canvio la velocitat"
