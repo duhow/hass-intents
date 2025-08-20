@@ -566,7 +566,7 @@ expansion_rules:
   artikel_bestimmt: "(der|die|das|dem|den|des)"
   artikel_unbestimmt: "(ein|eine|eines|einer|einem|einen)"
   artikel: "<artikel_bestimmt>|<artikel_unbestimmt>"
-  preposition: "in|an|bei|auf"
+  preposition: "(in|an|bei|auf)"
   name: "[<artikel_bestimmt>] {name}"
   area: "[<preposition>|<artikel_bestimmt>] {area}|(<preposition> der|(an|in) die|in dem|im|am|<von_dem>) {area}|des {area}s"
   floor: "[[in|auf] <artikel_bestimmt>|im|<von_dem>] {floor}[[ ]Geschoss]"
